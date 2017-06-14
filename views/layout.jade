@@ -1,0 +1,33 @@
+link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.0/semantic.min.css')
+script(src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js")
+script(src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.0/semantic.min.js")
+
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .ui.center.aligned.icon.header
+      .ui.violet.inverted.segment
+          image.ui.centered.medium.circular.image(src="/images/peter-face-headline.jpg")
+        h1 Peter Steinbach
+
+    .ui.center.aligned.container
+      .main-content
+        block content
+
+    .ui.inverted.vertical.footer.segment
+      .ui.center.aligned.container
+        .ui.inverted.header Technologies
+        .ui.stackable.inverted.divided.center.aligned.equal.height.stackable.grid
+          .three.wide.column
+            .ui.inverted Node.js with Express
+          .three.wide.column
+            .ui.inverted Jade
+          .three.wide.column
+            .ui.inverted Semantic UI
+          .three.wide.column
+            .ui.radio.checkbox
+              .input.type(type="radio", name="example")
+              .ui.label Go
